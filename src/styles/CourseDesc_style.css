@@ -1,0 +1,89 @@
+header {
+  /* height: 500px; */
+  background-color: #00546c;
+  margin-top: 50px;
+  /* min-height: 350px; */
+  /* max-height: 350px; */
+  position: relative;
+}
+
+header .CourseTitle {
+  display: inline-block;
+  width: 60%;
+  z-index: 999;
+  vertical-align: top;
+  align-items: center;
+  /* border: 2px solid black; */
+}
+
+.CourseTitle .info {
+  justify-content: flex-start;
+}
+
+.CourseTitleRight {
+  /* display: inline-block; */
+  position: fixed;
+  top: 50px;
+  left: 65%;
+  vertical-align: top;
+  margin-top: 50px;
+  width: calc(100% - 78%);
+  height: 620px;
+  overflow-y: auto;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  border-radius: 10px 10px 10px 10px;
+  border: 2px solid black;
+}
+
+.CourseCard {
+  background-color: #fff;
+}
+
+.imgdiv img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+}
+
+.courseCardDetils {
+  padding: 10px 25px 25px 10px;
+}
+
+.Enrollbutton {
+  padding: 10px 0;
+  font-weight: 600;
+  font-size: 18px;
+  margin-block: 30px;
+}
+
+.detail1,
+.detail2,
+.detail3,
+.detail4 {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+section {
+  width: 60%;
+}
+
+@media only screen and (max-width: 765px) {
+  header .CourseTitle {
+    width: 100%;
+    font-size: 12px;
+  }
+  .CourseTitleRight {
+    /* display: inline-block; */
+    position: static;
+    vertical-align: top;
+    /* margin-top: 50px; */
+    width: 100%;
+  }
+  section {
+    width: 90%;
+  }
+}

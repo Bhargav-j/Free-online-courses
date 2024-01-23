@@ -1,0 +1,191 @@
+.overview {
+  display: flex;
+  flex-wrap: wrap;
+  /* border: 2px solid black; */
+  margin: 80px 10px;
+  /* padding: 15px 0 20px 10px; */
+}
+
+.overview > :first-child {
+  width: 100%;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.overviewSections {
+  display: flex;
+  width: 70%;
+  height: 120px;
+  border: 2px solid rgb(141, 135, 135);
+  border-left: none;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.section1,
+.section2,
+.section3,
+.section4 {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  flex: 1;
+  border-left: 2px solid rgb(141, 135, 135);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.overviewSections svg {
+  margin-right: 5px;
+  font-size: 22px;
+}
+
+.myCourses,
+.myWishlist {
+  margin: 15px 10px;
+  /* border: 2px solid black; */
+}
+
+.DashboardCourseTile {
+  border: 1px solid black;
+  margin-block: 10px;
+  padding: 10px;
+}
+
+.courseStatusEdit {
+  width: fit-content;
+  /* border: 1px solid black; */
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.courseStatusEdit:hover {
+  background-color: rgb(157, 218, 73);
+  color: white;
+}
+
+.DashboardCourseDesc {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  /* border: 2px solid black; */
+  /* height: 120px; */
+}
+
+.Dashboardpic {
+  width: 200px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  flex-shrink: 0;
+  flex-basis: 1;
+}
+
+.Dashboardpic img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.Dashboardinfo {
+  flex: 1;
+  /* max-width: 420px; */
+  /* flex: 3 1 auto; */
+}
+
+.Dashboardinfo div {
+  padding-block: 5px;
+}
+
+.Dashboardinfo2 {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.Dashboardinfo2 div {
+  padding-inline: 10px;
+}
+
+.Dashboardinfo2 > :first-child {
+  padding-left: 0px;
+}
+
+.Dashboardinfo2 > :nth-child(2),
+.Dashboardinfo2 > :nth-child(3) {
+  border-left: 2px solid black;
+}
+
+.Dashboardinfo3 {
+  display: flex;
+  align-items: flex-start;
+}
+
+.Dashboardinfo3 > :first-child {
+  flex-shrink: 0;
+  padding-right: 10px;
+  font-weight: 600;
+}
+
+.DashboarddueStatus {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  justify-content: space-around;
+}
+
+.Dashboardduedate {
+  display: flex;
+  padding-inline: 20px;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.Dashboardstatus, .checkboxStatus {
+  /* width: 100%; */
+  height: 40px;
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  padding-inline: 10px;
+  margin-right: 20px;
+  background-color: orange;
+  border-radius: 5px;
+}
+
+.checkboxStatus {
+  background-color: rgb(239, 243, 13);
+}
+
+.DashboardProgressbar {
+  width: 100%;
+  height: 15px;
+  /* border: 1px solid black; */
+  border-radius: 3px;
+  /* background: linear-gradient(to right, #34db87 20%, #c9d1cc 40%); */
+}
+
+@media only screen and (max-width: 768px) {
+  .overviewSections {
+    width: 95%;
+  }
+  .Dashboardinfo2 div {
+    flex: 1;
+    /* border: 2px solid black; */
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .DashboardCourseDesc {
+    flex-direction: column;
+  }
+}

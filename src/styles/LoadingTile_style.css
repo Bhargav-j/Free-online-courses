@@ -1,0 +1,55 @@
+.Loading-tile {
+  margin: 10px 20px;
+  width: 280px;
+  height: 350px;
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.imgTile {
+  height: 150px;
+  background-color: grey;
+  margin-block: 10px;
+  border-radius: 5px;
+}
+
+.titleTile {
+  height: 30px;
+  background-color: grey;
+  margin: 20px 10px 20px 10px;
+  border-radius: 10px;
+}
+
+.contentTile1,
+.contentTile2,
+.contentTile3 {
+  height: 10px;
+  background-color: grey;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.Loading-tile:before {
+  content: "";
+  position: absolute;
+  width: 250px;
+  height: 100%;
+  background-image: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 30%,
+    rgba(255, 255, 255, 0.65),
+    rgba(255, 255, 255, 0) 70%
+  );
+  top: 0;
+  animation: shine 3s infinite linear;
+}
+
+@keyframes shine {
+    0% {left: -100px}
+    20% {left: 100%}
+    100% {left: 100%}
+}
+

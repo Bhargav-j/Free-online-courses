@@ -1,0 +1,25 @@
+.search_suggest {
+  position: absolute;
+  width: 100%;
+  top: 50px;
+  left: 0px;
+  max-height: 400px;
+  overflow-y: auto;
+  background-color: whitesmoke;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  text-align: left;
+  border-radius: 0px 0px 10px 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.search_suggest-list{
+    border-radius: 0px;
+}
+
+.list-group-item:hover{
+    background-color: rgb(238, 230, 230);
+    cursor: pointer;
+}
+
+

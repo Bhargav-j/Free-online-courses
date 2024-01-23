@@ -1,0 +1,150 @@
+.mainContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(138, 159, 192);
+}
+
+.loginContainer {
+  position: relative;
+  /* height: 600px; */
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2rem;
+  padding-block: 3rem;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.loginloading{
+  width: 100%;
+  height: 100%;
+  background-color :rgb(172, 182, 182, 0.4);
+  z-index: 999;
+  position: absolute;
+  border-radius: 2rem;
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+  font-size: 3rem;
+  font-weight: bolder;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.window_close {
+  width: 2rem;
+  height: 2rem;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 1.5rem;
+  top: 0.5rem;
+  border-radius: 5px;
+  border: 2px solid black;
+  background-color: rgb(239, 130, 130);
+  cursor: pointer;
+}
+
+.resultContainer,
+.historyItem {
+  flex-direction: row;
+  display: flex;
+  /* width: 400px; */
+  align-items: center;
+  justify-content: space-between;
+}
+
+.historyContainer {
+  flex-direction: column;
+  display: flex;
+  height: 200px;
+  align-items: center;
+  flex-grow: 5;
+  justify-content: flex-start;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 260px;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 1rem;
+}
+
+.inputContainer > .errorLabel {
+  color: red;
+  font-size: 12px;
+}
+
+.inputContainer .inputBox {
+  height: 48px;
+  width: 400px;
+  font-size: large;
+  border-radius: 8px;
+  border: 1px solid grey;
+  padding-left: 8px;
+}
+
+.inputlogin {
+  display: flex;
+  flex-direction: row;
+  height: 48px;
+  gap: 10px;
+  width: 400px;
+  justify-content: space-around;
+  margin-top: 1.5rem;
+}
+
+.inputlogin .inputButton {
+  height: 100%;
+  font-size: large;
+  border-radius: 8px;
+  border: 1px solid grey;
+  padding-inline: 8px;
+  cursor: pointer;
+}
+
+.inputlogin .inputButton:active {
+  transform: translateY(4px);
+}
+
+@media only screen and (max-width: 720px) {
+  .inputlogin {
+    width: 250px;
+  }
+  .inputContainer{
+    margin: 0.5rem 1.5rem;
+  }
+  .inputContainer .inputBox {
+    width: 250px;
+  }
+  .titleContainer .window_close {
+    right: -4.5rem;
+  }
+  .titleContainer {
+    font-size: 2rem;
+  }
+  .window_close{
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 20px;
+  }
+}

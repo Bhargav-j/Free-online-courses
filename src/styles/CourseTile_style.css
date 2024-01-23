@@ -1,0 +1,125 @@
+.CourseTile {
+  width: 300px;
+  /* height: 370px; */
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: transform .2s;
+}
+
+.CourseTile:hover{
+  transform: scale(1.01);
+}
+
+.Content {
+  display: block;
+  border-bottom: 2px solid black;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  line-height: normal;
+}
+
+.tileImg img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.instructor {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.rating {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.bi-star-fill {
+  font-size: 14px;
+  color: goldenrod;
+}
+
+.bi-dot {
+  font-size: 30px;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.status {
+  display: flex;
+  margin-top: 10px;
+}
+
+.status > div {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-size: 18px;
+}
+
+.status > :first-child {
+  flex: 1;
+  border-right: 2px solid black;
+  text-align: center;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .CourseTile {
+    width: 100%;
+    padding: 20px 0 20px 0;
+    height: 100%;
+  }
+  .CourseTile:hover{
+    transform: none;
+  }
+
+  .Content {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  .tileImg {
+    flex: 1;
+  }
+  .tileContent {
+    flex: 2;
+  }
+  .info {
+    justify-content: flex-start;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .CourseTile {
+    font-size: 12px;
+  }
+  .status > div{
+    font-size: 16px;
+  }
+  .title {
+    font-size: 14px;
+  }
+  .tileImg {
+    min-width: 50px;
+  }
+  .tileImg > img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
