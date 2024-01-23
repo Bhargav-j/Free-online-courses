@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Free-online-courses%20/static/css/main.1a615ec7.css",
-    "main.js": "/Free-online-courses%20/static/js/main.be2b5b65.js",
-    "static/media/bootstrap-icons.woff?": "/Free-online-courses%20/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
-    "static/media/bootstrap-icons.woff2?": "/Free-online-courses%20/static/media/bootstrap-icons.b7bcc075b395c14ce8c2.woff2",
-    "static/media/ex tile.jpg": "/Free-online-courses%20/static/media/ex tile.864e8de9df250b62cdba.jpg",
-    "index.html": "/Free-online-courses%20/index.html",
-    "main.1a615ec7.css.map": "/Free-online-courses%20/static/css/main.1a615ec7.css.map",
-    "main.be2b5b65.js.map": "/Free-online-courses%20/static/js/main.be2b5b65.js.map"
+    "main.css": "/Free-online-courses/static/css/main.d825409e.css",
+    "main.js": "/Free-online-courses/static/js/main.2c5cf28f.js",
+    "static/media/bootstrap-icons.woff?": "/Free-online-courses/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
+    "static/media/bootstrap-icons.woff2?": "/Free-online-courses/static/media/bootstrap-icons.b7bcc075b395c14ce8c2.woff2",
+    "static/media/ex tile.jpg": "/Free-online-courses/static/media/ex tile.864e8de9df250b62cdba.jpg",
+    "index.html": "/Free-online-courses/index.html",
+    "main.d825409e.css.map": "/Free-online-courses/static/css/main.d825409e.css.map",
+    "main.2c5cf28f.js.map": "/Free-online-courses/static/js/main.2c5cf28f.js.map"
   },
   "entrypoints": [
-    "static/css/main.1a615ec7.css",
-    "static/js/main.be2b5b65.js"
+    "static/css/main.d825409e.css",
+    "static/js/main.2c5cf28f.js"
   ]
 }
